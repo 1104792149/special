@@ -8,7 +8,8 @@
 <template>
 	<view>
 		<button @click="tap(1)">抽屉效果</button>
-		<button @click="tap(2)">上下 缩放 弹窗效果</button>
+		<button @click="tap(2)">上下 弹窗效果</button>
+		<button @click="tap(3)">缩放 弹窗效果</button>
 	</view>
 </template>
 
