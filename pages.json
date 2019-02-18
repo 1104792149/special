@@ -18,6 +18,22 @@
         {
             "path" : "pages/item3/item3",
             "style" : {}
+        },
+        {
+            "path" : "pages/item4/item4",
+            "style" : {}
+        },
+        {
+            "path" : "pages/item5/item5",
+            "style" : {}
+        },
+        {
+            "path" : "pages/item6/item6",
+            "style" : {}
+        },
+        {
+            "path" : "pages/item7/item7",
+            "style" : {}
         }
     ],
     "globalStyle" : {
