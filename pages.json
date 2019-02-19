@@ -34,6 +34,10 @@
         {
             "path" : "pages/item7/item7",
             "style" : {}
+        },
+        {
+            "path" : "pages/item8/item8",
+            "style" : {}
         }
     ],
     "globalStyle" : {

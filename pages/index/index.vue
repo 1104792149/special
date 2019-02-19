@@ -14,6 +14,7 @@
 		<button @click="tap(5)">左右滚动 效果</button>
 		<button @click="tap(6)">转圈 上下浮动  效果</button>
 		<button @click="tap(7)">抽奖转盘</button>
+		<button @click="tap(8)">红包雨</button>
 	</view>
 </template>
 

@@ -1,9 +1,10 @@
 <template>
 	<view>
 		<view style="display: flex;flex-direction: column;align-items: center;margin-top: 200upx;;">
-			<view>
+			<view class="imgs">
 				<!-- <image  :animation="animationData" class="img1" src="../../static/5.png"  ></image> -->
-			  <image src="../../static/5.png" mode="" class="z_content" v-bind:style="has_transition" v-bind:class="[hasT?'has_transition':'','img1']"></image>
+				<image src="../../static/5.png" mode="" class="z_content" v-bind:style="has_transition" v-bind:class="[hasT?'has_transition':'','img1']"></image>
+				<image src="../../static/4.png" mode="aspectFit" class="img2" ></image>
 			</view>
 		</view>
 		<button @click="kasTap">开始</button>
@@ -33,24 +34,32 @@
 		},
 		methods:{
 			kasTap(){
-				var a=this.randomNum();
+				var a=Math.floor(Math.random()*(6-0)+0);
 				this.hasT=true;
 				console.info(this.arrDeg[a])
 				this.rotateDeg+=360*6+this.arrDeg[a]-this.sycDeg
 				this.sycDeg=this.arrDeg[a];
 			},
-			 randomNum(){ 
-				 return Math.floor(Math.random()*(6-0)+0);
-			} ,
 			
 		}
 	}
 </script>
 
 <style lang="less" scoped>
+.imgs{
+	position: relative;
+	display: flex;flex-direction: column;align-items: center;
+}
+	
 .img1{
 	height: 600upx;
 	width: 600upx;
+}
+.img2{
+	position: absolute;
+	top: 35%;
+	width: 160upx;
+	height: 160upx;
 }
 .has_transition {
         transition: all 5s;
