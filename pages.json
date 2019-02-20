@@ -38,6 +38,10 @@
         {
             "path" : "pages/item8/item8",
             "style" : {}
+        },
+        {
+            "path" : "pages/item9/item9",
+            "style" : {}
         }
     ],
     "globalStyle" : {
