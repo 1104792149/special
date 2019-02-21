@@ -16,6 +16,7 @@
 		<button @click="tap(7)">抽奖转盘</button>
 		<button @click="tap(8)">红包雨</button>
 		<button @click="tap(9)">3d相册</button>
+		<button @click="tap(10)">canvas绘画</button>
 	</view>
 </template>
 
