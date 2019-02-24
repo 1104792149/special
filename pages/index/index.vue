@@ -17,6 +17,7 @@
 		<button @click="tap(8)">红包雨</button>
 		<button @click="tap(9)">3d相册</button>
 		<button @click="tap(10)">canvas绘画</button>
+		<button @click="tap(11)">canvas绘制海报</button>
 	</view>
 </template>
 
