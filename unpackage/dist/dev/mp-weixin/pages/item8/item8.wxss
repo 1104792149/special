@@ -1,0 +1,42 @@
+.red-packet.data-v-374098d8 {
+  width: 80rpx;
+  height: 90rpx;
+  z-index: 100;
+  position: fixed;
+  top: -60rpx;
+}
+.anim1.data-v-374098d8 {
+  -webkit-animation-name: scrollChild-data-v-374098d8;
+          animation-name: scrollChild-data-v-374098d8;
+  -webkit-animation-timing-function: 'ease';
+          animation-timing-function: 'ease';
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: 'normal';
+          animation-direction: 'normal';
+}
+@-webkit-keyframes scrollChild-data-v-374098d8 {
+0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+}
+100% {
+    -webkit-transform: translateY(130vh) rotate(360deg);
+            transform: translateY(130vh) rotate(360deg);
+    opacity: 0;
+}
+}
+@keyframes scrollChild-data-v-374098d8 {
+0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+}
+100% {
+    -webkit-transform: translateY(130vh) rotate(360deg);
+            transform: translateY(130vh) rotate(360deg);
+    opacity: 0;
+}
+}
+

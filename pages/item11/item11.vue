@@ -34,17 +34,17 @@
 				     
 				      {
 				        type: 'text',content: '超级魂斗罗',fontSize: 20,color: '#000',textAlign: 'center',
-				        top: 240, left: 187.5, width: 375,bolder: false
+				        y: 240, x: 187.5, width: 375
 				      },
 				     
 				      {
 						//圆形图片
 				        type: 'radius',url:  this.imgUrl,
-				        x: 100,y: 117.5, width: 70, height: 70,borderRadius:70
+				        x: 10,y: 50, width: 40, height: 40,borderRadius:40
 				      },
 				      {
-				     	  type: 'text',content: '长按识别二维码进入小游戏~',fontSize: 14,color: '#c0bab9',textAlign: 'center',top: 450,
-				        left: 187.5, width: 375, lineHeight: 20,MaxLineNumber: 2,breakWord: true
+				     	  type: 'text',content: '长按识别二维码进入小游戏~',fontSize: 14,color: '#c0bab9',textAlign: 'center',y: 450,
+				        x: 187.5, width: 375, lineHeight: 20,MaxLineNumber: 2,breakWord: true
 				      }        
 				    ]
 				}
