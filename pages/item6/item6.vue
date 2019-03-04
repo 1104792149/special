@@ -6,6 +6,8 @@
 		<button @click="zdTap">转动</button>
 		<image class="img1" :class="{dql:zdStatus2}" src="../../static/5.png" mode="aspectFit"></image>
 		<button @click="dqlTap">上下浮动</button>
+		<image class="img1" :class="{anim2:zdStatus3}" src="../../static/5.png" mode="aspectFit"></image>
+		<button @click="xtTap">心跳</button>
 	</view>
 </template>
 
@@ -14,7 +16,8 @@
 		data() {
 			return {
 				zdStatus1:false,
-				zdStatus2:false
+				zdStatus2:false,
+				zdStatus3:false
 			};
 		},
 		methods:{
@@ -23,6 +26,9 @@
 			},
 			dqlTap(){
 				this.zdStatus2=!this.zdStatus2
+			},
+			xtTap(){
+				this.zdStatus3=!this.zdStatus3
 			}
 		}
 	}
@@ -34,20 +40,28 @@
 }
 @keyframes scrollChild {
 0% {
-	transform:rotate(0);
+	transform:rotate(0) ;
+	
 }
 to {
 	transform:rotate(180deg);
 }
 }
-.dql{
- -webkit-animation: bounce-up 1.4s linear infinite;animation: bounce-up 1.4s linear infinite;
+.anim2{
+	animation: xt 1s linear infinite alternate;
 }
-@-webkit-keyframes bounce-up {
-  25% {-webkit-transform: translateY(10px);}
-  50%, 100% {-webkit-transform: translateY(0);}
- 75% {-webkit-transform: translateY(-10px);}
- }
+@keyframes xt{
+	0%{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0.8);
+	}
+}
+.dql{
+   animation: bounce-up 1.4s linear infinite;animation: bounce-up 1.4s linear infinite;
+}
+
  
  @keyframes bounce-up {
   25% {transform: translateY(10px);}

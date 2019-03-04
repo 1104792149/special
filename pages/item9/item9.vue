@@ -37,8 +37,11 @@
 		}
 	}
 </script>
-<style scoped="scoped">
+<style scoped="scoped" lang="less">
 	.content {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		
 	}
+	</style>

@@ -125,11 +125,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
 {
   data: function data() {
     return {
       zdStatus1: false,
-      zdStatus2: false };
+      zdStatus2: false,
+      zdStatus3: false };
 
   },
   methods: {
@@ -138,6 +141,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     },
     dqlTap: function dqlTap() {
       this.zdStatus2 = !this.zdStatus2;
+    },
+    xtTap: function xtTap() {
+      this.zdStatus3 = !this.zdStatus3;
     } } };exports.default = _default;
 
 /***/ }),
@@ -191,6 +197,16 @@ var render = function() {
         "button",
         { attrs: { eventid: "4a1cd5f1-1" }, on: { click: _vm.dqlTap } },
         [_vm._v("上下浮动")]
+      ),
+      _c("image", {
+        staticClass: "img1",
+        class: { anim2: _vm.zdStatus3 },
+        attrs: { src: "../../static/5.png", mode: "aspectFit" }
+      }),
+      _c(
+        "button",
+        { attrs: { eventid: "4a1cd5f1-2" }, on: { click: _vm.xtTap } },
+        [_vm._v("心跳")]
       )
     ],
     1

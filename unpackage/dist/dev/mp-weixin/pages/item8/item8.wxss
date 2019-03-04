@@ -3,7 +3,7 @@
   height: 90rpx;
   z-index: 100;
   position: fixed;
-  top: -60rpx;
+  top: -160rpx;
 }
 .anim1.data-v-374098d8 {
   -webkit-animation-name: scrollChild-data-v-374098d8;

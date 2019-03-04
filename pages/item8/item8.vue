@@ -82,7 +82,7 @@
 		height: 90upx;
 		z-index: 100;
 		position: fixed;
-		top: -60upx;
+		top: -160upx;
 	}
 
 	.anim1 {
