@@ -180,6 +180,9 @@
 				uni.saveImageToPhotosAlbum({
 				filePath:url,
 				success: function () {
+					uni.showToast({
+						title:'保存图片成功'
+					})
 				uni.hideLoading();
 				}
 				});

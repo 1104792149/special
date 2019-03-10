@@ -367,6 +367,9 @@ __webpack_require__.r(__webpack_exports__);
       uni.saveImageToPhotosAlbum({
         filePath: url,
         success: function success() {
+          uni.showToast({
+            title: '保存图片成功' });
+
           uni.hideLoading();
         } });
 

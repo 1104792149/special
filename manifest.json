@@ -54,7 +54,7 @@
         /* 小程序特有相关 */
         "appid" : "wx55ba219cf6074e1c",
         "setting" : {
-            "urlCheck" : true
+            "urlCheck" : false
         }
     }
 }

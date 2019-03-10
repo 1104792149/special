@@ -18,6 +18,7 @@
 		<button @click="tap(9)">3d相册</button>
 		<button @click="tap(10)">canvas绘画</button>
 		<button @click="tap(11)">canvas绘制海报</button>
+		<button @click="tap(12)">登录授权</button>
 	</view>
 </template>
 

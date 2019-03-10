@@ -1,0 +1,1 @@
+<template name="15369aaf"><view class="_view data-v-258754ce"><view class="_view data-v-258754ce container-wrap"><view class="_view data-v-258754ce container"><view wx:key="index" key="{{index}}" wx:for="{{20}}" wx:for-index="index" wx:for-item="item" class="_view data-v-258754ce">{{index}}</view></view></view></view></template>

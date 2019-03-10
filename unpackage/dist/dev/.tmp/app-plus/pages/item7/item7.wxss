@@ -1,0 +1,32 @@
+.imgs.data-v-4f6ce952 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.img1.data-v-4f6ce952 {
+  height: 600rpx;
+  width: 600rpx;
+}
+.img2.data-v-4f6ce952 {
+  position: absolute;
+  top: 35%;
+  width: 160rpx;
+  height: 160rpx;
+}
+.has_transition.data-v-4f6ce952 {
+  -webkit-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
+}
+

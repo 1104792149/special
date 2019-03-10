@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/item1/item1",
+    "pages/item2/item2",
+    "pages/item3/item3",
+    "pages/item4/item4",
+    "pages/item5/item5",
+    "pages/item6/item6",
+    "pages/item7/item7",
+    "pages/item8/item8",
+    "pages/item9/item9",
+    "pages/item10/item10",
+    "pages/item11/item11",
+    "pages/item12/item12"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "hello-demo"
+}

@@ -137,6 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 {
   data: function data() {
     return {};
@@ -316,6 +317,18 @@ var render = function() {
           }
         },
         [_vm._v("canvas绘制海报")]
+      ),
+      _c(
+        "button",
+        {
+          attrs: { eventid: "606ee14f-11" },
+          on: {
+            click: function($event) {
+              _vm.tap(12)
+            }
+          }
+        },
+        [_vm._v("登录授权")]
       )
     ],
     1
