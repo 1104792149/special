@@ -138,6 +138,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 {
   data: function data() {
     return {};
@@ -329,6 +331,30 @@ var render = function() {
           }
         },
         [_vm._v("登录授权")]
+      ),
+      _c(
+        "button",
+        {
+          attrs: { eventid: "606ee14f-12" },
+          on: {
+            click: function($event) {
+              _vm.tap(13)
+            }
+          }
+        },
+        [_vm._v("滑动抽屉")]
+      ),
+      _c(
+        "button",
+        {
+          attrs: { eventid: "606ee14f-13" },
+          on: {
+            click: function($event) {
+              _vm.tap(14)
+            }
+          }
+        },
+        [_vm._v("测试滑动抽屉")]
       )
     ],
     1

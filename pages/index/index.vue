@@ -19,6 +19,8 @@
 		<button @click="tap(10)">canvas绘画</button>
 		<button @click="tap(11)">canvas绘制海报</button>
 		<button @click="tap(12)">登录授权</button>
+		<button @click="tap(13)">滑动抽屉</button>
+		<button @click="tap(14)">测试滑动抽屉</button>
 	</view>
 </template>
 

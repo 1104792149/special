@@ -54,6 +54,14 @@
         {
             "path" : "pages/item12/item12",
             "style" : {}
+        },
+        {
+            "path" : "pages/item13/item13",
+            "style" : {}
+        },
+        {
+            "path" : "pages/item14/item14",
+            "style" : {}
         }
     ],
     "globalStyle" : {

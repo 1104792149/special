@@ -12,7 +12,9 @@
     "pages/item9/item9",
     "pages/item10/item10",
     "pages/item11/item11",
-    "pages/item12/item12"
+    "pages/item12/item12",
+    "pages/item13/item13",
+    "pages/item14/item14"
   ],
   "subPackages": [],
   "window": {
