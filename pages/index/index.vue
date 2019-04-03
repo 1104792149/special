@@ -21,6 +21,7 @@
 		<button @click="tap(12)">登录授权</button>
 		<button @click="tap(13)">滑动抽屉</button>
 		<button @click="tap(14)">测试滑动抽屉</button>
+		<button @click="tap(15)">滑动导航栏</button>
 	</view>
 </template>
 
@@ -28,11 +29,9 @@
 	export default {
 		data() {
 			return {
-				
 			}
 		},
 		onLoad() {
-
 		},
 		methods: {
 			tap(type) {
@@ -40,6 +39,8 @@
 					url: `../item${type}/item${type}`
 				})
 			}
+		},
+		watch:{
 		}
 	}
 </script>
