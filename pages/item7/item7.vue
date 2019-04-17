@@ -41,7 +41,11 @@
 				this.sycDeg=this.arrDeg[a];
 			},
 			
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 

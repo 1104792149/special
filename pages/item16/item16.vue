@@ -38,12 +38,12 @@
 					}
 					this.arr.push(obj);
 				};
-				this.IntersectionObserver();
-				setTimeout(function() {
-					that.checkImgs()
-				}, 300);
+				// 				this.IntersectionObserver();
+				// 				setTimeout(function() {
+				// 					that.checkImgs()
+				// 				}, 300);
 			},
-			//初始化观察	className
+			//初始化观察	className  // 关闭观察器 io.disconnect();
 			IntersectionObserver() {
 				var that = this;
 				this.ioObj = new IntersectionObserver(function(ioes) {
@@ -69,8 +69,8 @@
 					});
 				});
 			},
-			//观察全部
-			checkImgs() {
+			//观察全部 方案一
+			checkImgs: function() {
 				var that = this;
 				const imgs = document.getElementsByClassName("list-border");
 				// console.info(imgs);
@@ -79,6 +79,71 @@
 				};
 				var list_bottom = document.getElementsByClassName("list-bottom");
 				that.ioObj.observe(list_bottom[0]);
+			},
+			// 方案2
+			checkImgs2: function() {
+				var that = this;
+				const imgs = document.querySelectorAll('.list-border');
+				const list_bottom = document.querySelectorAll('.list-bottom');
+				var newArr1 = Array.from(imgs); //Array.from() 方法从一个类似数组或可迭代对象中创建一个新的数组实例
+				var newArr2 = Array.from(list_bottom);
+				newArr1.push.apply(newArr1, newArr2);
+				newArr1.forEach(el => {
+					if (el.className == 'list-bottom') {
+						that.loadBottom(el);
+					}
+					that.loadImg(el)
+				})
+			},
+			loadBottom: function(el) {
+				if (this.isBottom(el)) {
+					// 加载更多
+					this.getData()
+				}
+			},
+			isBottom: function(el) {
+				const bound = el.getBoundingClientRect();
+				//可视区域的高度
+				const clientHeight = window.innerHeight;
+				return bound.top <= clientHeight + bound.height * 3
+			},
+			loadImg: function(el) {
+				if (this.isInSight(el)) {
+					el.firstChild.hidden = false;
+				} else {
+					el.firstChild.hidden = true;
+				}
+			},
+			isInSight: function(el) {
+				const bound = el.getBoundingClientRect();
+				//可视区域的高度
+				const clientHeight = window.innerHeight;
+				//return bound.top <= clientHeight && bound.top > -bound.height; //测试
+				return bound.top <= clientHeight * 1.5 && bound.top > -clientHeight * 2; //正式
+			},
+			// 简单的节流函数
+			//fun 要执行的函数
+			//delay 延迟
+			//time  在time时间内必须执行一次
+			throttle: function(fun, delay, time) {
+				var timeout,
+					startTime = new Date();
+				return function() {
+					var context = this,
+						args = arguments,
+						curTime = new Date();
+					clearTimeout(timeout);
+					// 如果达到了规定的触发时间间隔，触发 handler
+					if (curTime - startTime >= time) {
+						fun.apply(context, args);
+						startTime = curTime;
+						// 没达到触发间隔，重新设定定时器
+					} else {
+						timeout = setTimeout(function() {
+							fun.apply(context, args);
+						}, delay);
+					}
+				};
 			},
 		},
 		computed: {
@@ -101,10 +166,15 @@
 				}
 			}
 		},
-		mounted: function() {
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});
 			var that = this;
+			// 滚动事件监听
+			window.addEventListener('scroll', that.throttle(that.checkImgs2, 200, 400));
 			this.getData();
-		},
+		}
 	}
 </script>
 

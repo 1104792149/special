@@ -30,7 +30,11 @@
 			xtTap(){
 				this.zdStatus3=!this.zdStatus3
 			}
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 

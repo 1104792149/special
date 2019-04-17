@@ -60,7 +60,11 @@
 				this.status2=!this.status2
 			}
 				
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 

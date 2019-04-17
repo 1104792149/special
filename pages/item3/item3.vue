@@ -36,7 +36,11 @@
 			tap(){
 				this.isShow=!this.isShow;
 			}
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 

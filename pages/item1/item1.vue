@@ -41,7 +41,11 @@
 			ctTap(){
 				this.status=!this.status;
 			}
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 

@@ -128,13 +128,18 @@
 				}
 			}
 		},
-		mounted() {
-			this.bindEvent();//监听事件
-			this.handleChange(this.items[this.selectedId].label,this.selectedId);//初始化导航位置
-			this.getWidth();//可视区宽度; 可视区与可滑动元素宽度差值
-			this.windowInit();//初始化定时器requestAnimationFrame
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});
+			var that=this
+			setTimeout(function(){
+				that.bindEvent();//监听事件
+				that.handleChange(that.items[that.selectedId].label,that.selectedId);//初始化导航位置
+				that.getWidth();//可视区宽度; 可视区与可滑动元素宽度差值
+				that.windowInit();//初始化定时器requestAnimationFrame
+			},300)
 		},
-
 		destoryed() {
 			this.removeEvent();//卸载事件监听
 		},

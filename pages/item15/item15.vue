@@ -103,5 +103,10 @@
 				}
 			}
 		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});
+			}
 	}
 </script>

@@ -12,7 +12,11 @@
 	export default {
 		data() {
 			return {};
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 

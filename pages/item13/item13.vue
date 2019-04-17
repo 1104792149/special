@@ -45,7 +45,10 @@
 			}
 
 		},
-		onLoad() {
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});
 			let that=this;
 			uni.getSystemInfo({
 			success: function (res) {

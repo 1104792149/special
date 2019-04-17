@@ -75,6 +75,10 @@
             "path" : "pages/item17/item17",
             "style" : {}
         }
+        ,{
+            "path" : "pages/item18/item18",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",

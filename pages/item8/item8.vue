@@ -61,7 +61,10 @@
 				}, 100);
 			}
 		},
-		onLoad(options) {
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});
 			var that = this;
 			// 获取手机屏幕宽高
 			uni.getSystemInfo({

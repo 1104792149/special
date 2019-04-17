@@ -34,7 +34,11 @@
 			callbackTap: function(e) {
 				this.current = e
 			}
-		}
+		},
+		onLoad(e) {
+			uni.setNavigationBarTitle({
+				title: e.title
+			});}
 	}
 </script>
 <style scoped="scoped" lang="less">
