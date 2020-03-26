@@ -1,1 +1,0 @@
-<template name="7a6e4fe9"><view class="_view 7a6e4fe9"><button bindtap="handleProxy" data-eventid="{{'7a6e4fe9-0'}}" data-comkey="{{$k}}" class="_button 7a6e4fe9">登录授权</button><button open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'7a6e4fe9-1'}}" data-comkey="{{$k}}" class="_button 7a6e4fe9">小程序登录授权</button></view></template>

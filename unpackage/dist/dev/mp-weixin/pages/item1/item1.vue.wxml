@@ -1,1 +1,0 @@
-<template name="419dada7"><view class="_view data-v-5c87a874"><view class="_view data-v-5c87a874 item1-000 {{[status ? 'show' : '']}}"><view class="_view data-v-5c87a874 item1-fff"></view></view><button bindtap="handleProxy" data-eventid="{{'419dada7-0'}}" data-comkey="{{$k}}" class="_button data-v-5c87a874">抽屉效果</button></view></template>
