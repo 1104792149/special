@@ -25,6 +25,7 @@ button {
 		<button @click="tap(16, '图片懒加载')">图片懒加载</button>
 		<button @click="tap(17, '加强型滑动导航栏')">加强型滑动导航栏</button>
 		<button @click="tap(18, '数字签名')">数字签名</button>
+		<button @click="tap(19, '吸顶布局')">吸顶布局</button>
 	</view>
 </template>
 

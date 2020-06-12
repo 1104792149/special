@@ -78,6 +78,9 @@
         ,{
             "path" : "pages/item18/item18",
             "style" : {}
+        },{
+            "path" : "pages/item19/item19", 
+            "style" : {}
         }
     ],
     "globalStyle" : {
